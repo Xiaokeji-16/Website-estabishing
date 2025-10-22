@@ -1,19 +1,23 @@
 import { Container, Nav, Navbar } from "react-bootstrap";  
-import {FashoppingCart, FaUser} from 'react-icons/fa'
+import {FaShoppingCart, FaUser} from "react-icons/fa";
 
 const Header = () => {
     return ( 
         <header>
-            <Navbar >
+            <Navbar bg="dark" variant="dark" expend="md" collapseOnSelect>
                 <Container>
-                    <Navbar.Brand href="#home">MyApp</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                    <Navbar.Brand href="/">E-SHOP</Navbar.Brand>
+                    <Navbar.Toggle aria-control="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav" />
+                    <Nav className="ms-auto">
+                        <Nav.Link href="/cart">
+                            <FaShoppingCart /> Cart
+                        </Nav.Link>
+                        <Nav.Link href="/login">
+                            <FaUser /> Sign In
+                        </Nav.Link>
+                    </Nav>
+                    <Navbar.Collapse />
                 </Container>
             </Navbar>
         </header>
