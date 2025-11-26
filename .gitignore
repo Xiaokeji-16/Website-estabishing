@@ -3,6 +3,7 @@
 # dependencies
 ./frontend/node_modules
 .pnp.js
+/node_modules
 
 # testing
 /coverage
